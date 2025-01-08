@@ -1,0 +1,66 @@
+.scroll-wrapper {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    gap: 10px;
+  }
+  
+.scroll-container {
+    width: 100%; /* Largeur du conteneur de défilement */
+    overflow-x: auto; /* Permet le défilement horizontal */
+    white-space: nowrap; /* Empêche les éléments de se casser sur plusieurs lignes */
+    padding: 20px 0; /* Espacement en haut et en bas */
+    /* border: 1px solid #ccc;  */
+}
+
+  /* Style des éléments à l'intérieur du conteneur */
+  .scroll-item {
+    display: inline-block;
+    width: 310px; 
+    height: 350px;
+    background-color: #ff7e5f;
+    color: white; 
+    text-align: center;
+    line-height: 100px;
+    margin-right: 40px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .scroll-item:hover {
+    transform: scale(1.1); /* Agrandissement à 110% de la taille normale */
+  }
+  
+  
+.scroll-container::-webkit-scrollbar {
+  height: 8px; 
+  background-color: #a7a2a2; 
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background: repeating-linear-gradient(45deg, #3d6897, #007bff 2px); 
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  border-radius: 10px; /* Coins arrondis du rail de défilement */
+  background-color: #f1f1f1; /* Couleur de fond du rail */
+}
+  
+  /* Style des boutons pour le défilement */
+  button {
+    background-color: #007bff; 
+    color: white; 
+    border: none;
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; /* Pointeur de souris lorsqu'on survole le bouton */
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; /* Transition pour l'effet de survol */
+  }
+  
+  /* Effet de survol des boutons */
+  button:hover {
+    background-color: #0056b3; 
+  }
+  
